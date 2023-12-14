@@ -180,4 +180,55 @@ main {
   }
 
 /* BALLS */
+.balls {
+    position: absolute;
+}
 
+.ball1 {
+    position: absolute;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50px;
+    background-color: #faf3dd;
+}
+
+.ball2 {
+    position: absolute;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50px;
+    background-color: #faddeb;
+}
+
+/* TOP */
+#b1 {
+    top: -190px;
+    left: -25px;
+}
+
+#b2 {
+    top: -225px;
+    left: 10px;
+}
+
+/* MIDDLE */
+#b3 {
+    top: -90px;
+    left: -70px;
+}
+
+#b4 {
+    top: -60px;
+    left: -15px;
+}
+
+#b5 {
+    top: -120px;
+    left: 40px;
+}
+
+/* BOTTOM */
+#b6 {
+    top: 0px;
+    left: 80px;
+}

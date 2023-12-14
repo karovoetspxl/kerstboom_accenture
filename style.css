@@ -96,85 +96,94 @@ main {
     
   }
   
-  .light {
+  .light1 {
     position: absolute;
     width: 20px; 
     height: 20px;
     border-radius: 10px 150px 30px 150px;
     transform: rotate(40deg);
     box-shadow: 1px 1px 15px #faf3dd;
+    background-color: #ff595e;
+  }
+
+  .light2 {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-radius: 10px 150px 30px 150px;
+    transform: rotate(40deg);
+    box-shadow: 1px 1px 15px #faf3dd;
+    background-color: #ffca3a;
+  }
+
+  .light3 {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-radius: 10px 150px 30px 150px;
+    transform: rotate(40deg);
+    box-shadow: 1px 1px 15px #faf3dd;
+    background-color: #9e0059;
   }
 
   /* TOP ROW */
   #l1 {
-    background-color: #ff595e;
     top: -150px;
     left: -55px;
   }
   
   #l2 {
-    background-color: #ffca3a;
     top: -140px;
     left: -20px;
   }
   
   #l3 {
-    background-color: #6a4c93;
     top: -145px;
     left: 10px;
   }
   
   #l4 {
-    background-color: #1982c4;
     top: -158px;
     left: 35px;
   }
   
   #l5 {
-    background-color: #9e0059;
     top: -180px;
     left: 55px;
   }
 
   /* BOTTOM ROW */
   #l6 {
-    background-color: #8ac926;
     top: -5px;
     left: -115px;
   }
   
   #l7 {
-    background-color: #ff595e;
     top: 10px;
     left: -80px;
   }
   
   #l8 {
-    background-color: #ffca3a;
     top: 5px;
     left: -40px;
   }
   
   #l9 {
-    background-color: #9e0059;
     top: -5px;
     left: -5px;
   }
   
   #l10 {
-    background-color: #4361ee;
     top: -25px;
     left: 35px;
   }
 
   #l11 {
-    background-color: #8ac926;
     top: -50px;
     left: 70px;
   }
 
   #l12 {
-    background-color: #6a4c93;
     top: -80px;
     left: 95px;
   }
@@ -189,7 +198,7 @@ main {
     width: 30px; 
     height: 30px;
     border-radius: 50px;
-    background-color: #faf3dd;
+    background-color: #cdc198;
 }
 
 .ball2 {
@@ -197,7 +206,7 @@ main {
     width: 30px; 
     height: 30px;
     border-radius: 50px;
-    background-color: #faddeb;
+    background-color: #d3a3ba;
 }
 
 /* TOP */
@@ -232,3 +241,46 @@ main {
     top: 0px;
     left: 80px;
 }
+
+/* STAR */
+.star {
+  margin: 50px 0;
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #f9dc5c;
+  border-left: 25px solid transparent;
+  transform: rotate(35deg);
+  top: -265px;
+  left: -9px;
+    }
+
+.star:before {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-bottom: 20px solid #f9dc5c;
+      border-left: 7.5px solid transparent;
+      border-right: 7.5px solid transparent;
+      content: '';
+      transform: rotate(-35deg);
+      top: -12.5px;
+      left: -17.5px;
+    }
+
+.star:after {
+      position: absolute;
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-right: 25px solid transparent;
+      border-bottom: 17.5px solid #f9dc5c;
+      border-left: 25px solid transparent;
+      content: '';
+      transform: rotate(-70deg);
+      top: 0.75px;
+      left: -26.25px;
+    }

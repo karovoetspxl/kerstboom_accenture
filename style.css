@@ -1,23 +1,183 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    text-align: center;
+body {
+    background-color: #00509d;
 }
 
+/* HEADER */
 h1 {
     text-align: center;
     margin-top: 5%;
 }
 
-#tree {
+/* MAIN */
+main {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .christmas {
+    position: relative;
+  }
+  .tree {
+    position: relative;
+    background-color: #685044;
+    width: 30px;
+    height:80px;
+    top:100px;
+    transform-style: preserve-3d;
+  }
+  
+  .tree:before {
+    content:"";
     position: relative;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid green;
-}
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 330px solid #127475;
+    border-radius: 30px;
+    top:-320px;
+    left:-135px;
+  }
+  
+  .tree:after {
+    content:"";
+    position: relative;
+    width: 0;
+    height: 0;
+    border-right: 150px solid transparent;
+    border-bottom: 330px solid #0e9594;
+    border-bottom-right-radius: 30px;
+    top:-339px;
+    right: -15px;
+  }
+
+/* CORDS */
+  .cord1 {
+    width: 120px;
+    height: 120px;
+    border: solid 3px #333;
+    border-radius: 50%;
+    top: -255px; 
+    left: -50px; 
+    position: absolute;
+    transform: rotate3d(8, 0.1, -5, 75deg); 
+    box-sizing: border-box;
+    backface-visibility: visible !important;
+    z-index:5;
+  }
+  
+  .cord2 {
+    width: 240px;
+    height: 200px;
+    border: solid 3px #333;
+    border-radius: 50%;
+    top: -180px; 
+    left: -120px; 
+    position: absolute;
+    transform: rotate3d(8, 0.1, -5, 75deg); 
+    box-sizing: border-box;
+    backface-visibility: visible !important;
+    z-index:5;
+    
+  }
+
+/* LIGHTS */
+.lights {
+    position: absolute;
+    
+  }
+  
+  .light {
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    border-radius: 10px 150px 30px 150px;
+    transform: rotate(40deg);
+    box-shadow: 1px 1px 15px #faf3dd;
+  }
+
+  /* TOP ROW */
+  #l1 {
+    background-color: #ff595e;
+    top: -150px;
+    left: -55px;
+  }
+  
+  #l2 {
+    background-color: #ffca3a;
+    top: -140px;
+    left: -20px;
+  }
+  
+  #l3 {
+    background-color: #6a4c93;
+    top: -145px;
+    left: 10px;
+  }
+  
+  #l4 {
+    background-color: #1982c4;
+    top: -158px;
+    left: 35px;
+  }
+  
+  #l5 {
+    background-color: #9e0059;
+    top: -180px;
+    left: 55px;
+  }
+
+  /* BOTTOM ROW */
+  #l6 {
+    background-color: #8ac926;
+    top: -5px;
+    left: -115px;
+  }
+  
+  #l7 {
+    background-color: #ff595e;
+    top: 10px;
+    left: -80px;
+  }
+  
+  #l8 {
+    background-color: #ffca3a;
+    top: 5px;
+    left: -40px;
+  }
+  
+  #l9 {
+    background-color: #9e0059;
+    top: -5px;
+    left: -5px;
+  }
+  
+  #l10 {
+    background-color: #4361ee;
+    top: -25px;
+    left: 35px;
+  }
+
+  #l11 {
+    background-color: #8ac926;
+    top: -50px;
+    left: 70px;
+  }
+
+  #l12 {
+    background-color: #6a4c93;
+    top: -80px;
+    left: 95px;
+  }
+
+/* BALLS */
+

@@ -26,12 +26,6 @@ main {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1170px) {
-  main {
-    padding: 0 30%;
-  }
-}
-
 .christmas {
   position: relative;
   margin-left: 20%;
@@ -402,6 +396,13 @@ h2 {
   display: table-cell;
   width: 70px;
   height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.color:hover {
+  cursor: pointer;
+  opacity: 70%;
 }
 
 /* BALLS */
@@ -449,5 +450,10 @@ h2 {
     width: 100%;
     text-align: center;
     padding-bottom: 20%;
+  }
+}
+@media screen and (min-width: 1170px) {
+  main {
+    padding: 0 30%;
   }
 }

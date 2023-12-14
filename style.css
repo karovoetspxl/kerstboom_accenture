@@ -6,27 +6,35 @@
 }
 
 body {
-  background-color: #00509d;
+  background-color: #fff;
 }
 
 /* HEADER */
 h1 {
   margin: 5%;
-  color: #ffffff;
+  color: #A100FF;
+  text-align: center;
 }
 
 /* MAIN */
 main {
   height: 60vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 10%;
+  flex-wrap: wrap;
 }
 
-
+@media screen and (min-width: 1170px) {
+  main {
+    padding: 0 30%;
+  }
+}
 
 .christmas {
   position: relative;
+  margin-left: 20%;
 }
 
 .tree {
@@ -386,7 +394,7 @@ main {
 
 /* CHANGE COLORS */
 h2 {
-  color: #fff;
+  color: #A100FF;
   margin-top: 5%;
 }
 
@@ -420,4 +428,26 @@ h2 {
 
 .l-clr3 {
   background-color: #08bdbd;
+}
+
+@media screen and (max-width: 600px) {
+  .christmas {
+    width: 100%;
+    height: 65vh;
+    padding: 40% 25%;
+  }
+
+  .gift, .gift2, .gift3 {
+    margin: 50% 31%;
+  }
+
+  .star {
+    margin: 65% 31%;
+  }
+
+  .colors {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20%;
+  }
 }

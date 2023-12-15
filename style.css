@@ -3,17 +3,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #fff;
+  background-color: #3e4e73;
 }
 
 /* HEADER */
 h1 {
   margin: 5%;
-  color: #A100FF;
+  color: #bdd2d2;
   text-align: center;
+  font-family: 'Kalnia', serif;
 }
 
 /* MAIN */
@@ -387,9 +389,10 @@ main {
 }
 
 /* CHANGE COLORS */
-h2 {
-  color: #A100FF;
+h3 {
+  color: #bdd2d2;
   margin-top: 5%;
+  font-family: 'Afacad', sans-serif;
 }
 
 .color {
@@ -407,15 +410,15 @@ h2 {
 
 /* BALLS */
 .b-clr1 {
-  background-color: #f6cfbe;
+  background-color: #ed6a5a;
 }
 
 .b-clr2 {
-  background-color: #26547c;
+  background-color: #f4f1bb;
 }
 
 .b-clr3 {
-  background-color: #08bdbd;
+  background-color: #9bc1bc;
 }
 
 /* LIGHTS */
@@ -431,7 +434,7 @@ h2 {
   background-color: #08bdbd;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .christmas {
     width: 100%;
     height: 65vh;
@@ -454,6 +457,6 @@ h2 {
 }
 @media screen and (min-width: 1170px) {
   main {
-    padding: 0 30%;
+    padding: 0 25%;
   }
 }

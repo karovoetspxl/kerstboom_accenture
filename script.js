@@ -42,3 +42,60 @@ function colorLight3(z) {
     document.getElementsByClassName("light3")[2].style.backgroundColor = b;
     document.getElementsByClassName("light3")[3].style.backgroundColor = b;
 }
+
+//WEATHER API
+document.addEventListener('DOMContentLoaded', function() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(getWeather, handleLocationError);
+    } else {
+      document.getElementById('weather-info').innerText = 'Geolocation is not supported by this browser.';
+    }
+  });
+
+  function getWeather(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const apiKey = '544e5c464e9877620ea1ab4280f82a85';
+
+    const apiEndpoint = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+    fetch(apiEndpoint)
+      .then(response => response.json())
+      .then(data => {
+        const weatherDescription = data.weather[0].description;
+        
+
+        const weatherInfo = `Weather: ${weatherDescription}`;
+        document.getElementById('weather-info').innerHTML = weatherInfo;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+        document.getElementById('weather-info').innerText = 'Unable to fetch weather data.';
+      });
+      
+      const snowContainer = document.getElementsByClassName('snow-container');
+
+    if ('${weatherDescription}' = 'snow') {
+      // If the condition is true, display the div
+      snowContainer.style.display = 'block'; // or 'inline', 'flex', etc., depending on your layout needs
+    } else {
+      // If the condition is false, hide the div
+      snowContainer.style.display = 'none';
+    }
+  }
+  function handleLocationError(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        document.getElementById('weather-info').innerText = 'You denied access to your location.';
+        break;
+      case error.POSITION_UNAVAILABLE:
+        document.getElementById('weather-info').innerText = 'Location information is unavailable.';
+        break;
+      case error.TIMEOUT:
+        document.getElementById('weather-info').innerText = 'The request to get user location timed out.';
+        break;
+      case error.UNKNOWN_ERROR:
+        document.getElementById('weather-info').innerText = 'An unknown error occurred.';
+        break;
+    }
+  }

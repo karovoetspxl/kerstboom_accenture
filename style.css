@@ -13,7 +13,7 @@ body {
 /* HEADER */
 h1 {
   margin: 5%;
-  color: #bdd2d2;
+  color: #fff;
   text-align: center;
   font-family: 'Kalnia', serif;
 }
@@ -31,11 +31,16 @@ main {
   background-color: #3e4e73;
   width: 50%;
   height: 60vh;
+  border-radius: 5px;
+}
+
+.card h1 {
+  margin-top: 15%;
 }
 
 .christmas {
   position: relative;
-  top: 50%;
+  top: 30%;
   left: 50%;
 }
 
@@ -396,7 +401,7 @@ main {
 
 /* CHANGE COLORS */
 .colors {
-  background-color: #bdd2d2;
+  background-color: #c5d0eb;
   padding: 5%;
   border-radius: 7px;
 }
@@ -404,6 +409,7 @@ main {
 h2 {
   font-family: 'Kalnia', serif;
   color: #fff;
+  margin-bottom: 20%;
 }
 
 h3 {
@@ -420,12 +426,15 @@ h4 {
   margin-top: 5%;
 }
 
+.ornaments2 {
+  margin-bottom: 20%;
+}
+
 .color {
-  width: 50px;
+  width: 60px;
   height: 30px;
-  font-weight: bold;
   border-radius: 5px;
-  color: #161616;
+  border: #3e4e73 solid 2px;
 }
 
 .color:hover {
@@ -459,7 +468,22 @@ h4 {
   background-color: #08bdbd;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1800px) {
+  .card {
+    width: 60%;
+  }
+  main {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
   main {
     width: 100%;
   }
@@ -471,21 +495,11 @@ h4 {
   .colors {
     width: 100%;
     text-align: center;
-    margin: 20% 0;
+    margin: 15% 0;
   }
-}
-@media screen and (min-width: 1170px) {
-  main {
-    padding: 0 25%;
-  }
-}
 
-@media screen and (max-width: 1800px) {
-  .card {
-    width: 60%;
-  }
-  main {
-    padding: 0 5%;
+  h2, .ornaments2 {
+    margin-bottom: 10%;
   }
 }
 
@@ -559,4 +573,9 @@ h4 {
 
 .hidden {
   display: none;
+}
+
+/* FOOTER */
+footer h2 {
+  margin-bottom: 0;
 }

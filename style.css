@@ -462,7 +462,7 @@ h3 {
 }
 
 /* SNOW */
-.snow-container {
+.snowy{
   position: fixed;
   top: 0;
   left: 0;
@@ -527,4 +527,8 @@ h3 {
   100% {
     transform: translateY(100vh) translateX(15vw);
   }
+}
+
+.hidden {
+  display: none;
 }

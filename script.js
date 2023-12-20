@@ -68,20 +68,19 @@ function getWeather(position) {
             const weatherInfo = `Weather: ${weatherDescription}`;
             document.getElementById('weather-info').innerHTML = weatherInfo;
 
-            /*
-            document.addEventListener(function() {
-            const snowContainer = document.getElementsByClassName('snow-container');
+            const weatherElement = document.getElementById('weather-animation');
 
-            if (`${weatherDescription}` = 'snow') {
-                snowContainer.style.display = 'block';
-            } else {
-                snowContainer.style.display = 'none';
-            }})*/
+            switch (weatherDescription) {
+            case 'few clouds':
+                weatherElement.classList.add('snowy');
+
+            weatherElement.classList.remove('hidden');} 
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
             document.getElementById('weather-info').innerText = 'Unable to fetch weather data.';
-        });
+        });  
+    
 }
 function handleLocationError(error) {
     switch (error.code) {

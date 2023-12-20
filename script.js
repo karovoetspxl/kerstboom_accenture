@@ -71,10 +71,9 @@ function getWeather(position) {
             const weatherElement = document.getElementById('weather-animation');
 
             switch (weatherDescription) {
-            case 'few clouds':
+            case 'snow':
                 weatherElement.classList.add('snowy');
-
-            weatherElement.classList.remove('hidden');} 
+                weatherElement.classList.remove('hidden');} 
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #3e4e73;
+  background-color: #9eadcf;
 }
 
 /* HEADER */
@@ -20,7 +20,6 @@ h1 {
 
 /* MAIN */
 main {
-  height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,9 +27,16 @@ main {
   flex-wrap: wrap;
 }
 
+.card {
+  background-color: #3e4e73;
+  width: 50%;
+  height: 60vh;
+}
+
 .christmas {
   position: relative;
-  margin-left: 20%;
+  top: 50%;
+  left: 50%;
 }
 
 .tree {
@@ -389,15 +395,34 @@ main {
 }
 
 /* CHANGE COLORS */
+.colors {
+  background-color: #bdd2d2;
+  padding: 5%;
+  border-radius: 7px;
+}
+
+h2 {
+  font-family: 'Kalnia', serif;
+  color: #fff;
+}
+
 h3 {
-  color: #bdd2d2;
-  margin-top: 5%;
+  color: #3e4e73;
   font-family: 'Afacad', sans-serif;
 }
 
+h4 {
+  color: #fff;
+  font-family: 'Afacad', sans-serif;
+}
+
+.margintop {
+  margin-top: 5%;
+}
+
 .color {
-  width: 70px;
-  height: 50px;
+  width: 50px;
+  height: 30px;
   font-weight: bold;
   border-radius: 5px;
   color: #161616;
@@ -435,29 +460,32 @@ h3 {
 }
 
 @media screen and (max-width: 650px) {
-  .christmas {
+  main {
     width: 100%;
-    height: 65vh;
-    padding: 40% 25%;
   }
 
-  .gift, .gift2, .gift3 {
-    margin: 50% 31%;
-  }
-
-  .star {
-    margin: 65% 31%;
+  .card {
+    width: 100%;
   }
 
   .colors {
     width: 100%;
     text-align: center;
-    padding-bottom: 20%;
+    margin: 20% 0;
   }
 }
 @media screen and (min-width: 1170px) {
   main {
     padding: 0 25%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .card {
+    width: 60%;
+  }
+  main {
+    padding: 0 5%;
   }
 }
 

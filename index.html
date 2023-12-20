@@ -16,6 +16,7 @@
     <h1>Decorate your christmas tree.</h1>
   </header>
   <main>
+    <div class="card">
     <div class="christmas">
       <div class="tree">
         <div class="cord1"></div>
@@ -57,41 +58,45 @@
       <div class="gift3"></div>
       <div class="ribbon3"></div>
     </div>
+  </div>
 
     <div class="colors">
       <div>
+        <h2 id="decorate">Decorate</h2>
+        <h3>Ornaments</h3>
         <div>
-          <h3>Ball color 1</h3>
-          <button onclick="colorBall1(this)" class="color b-clr1">Color 1</button>
-          <button onclick="colorBall1(this)" class="color b-clr2">Color 2</button>
-          <button onclick="colorBall1(this)" class="color b-clr3">Color 3</button>
+          <h4>Color 1</h4>
+          <button onclick="colorBall1(this)" class="color b-clr1"></button>
+          <button onclick="colorBall1(this)" class="color b-clr2"></button>
+          <button onclick="colorBall1(this)" class="color b-clr3"></button>
         </div>
         <div>
-          <h3>Ball color 2</h3>
-          <button onclick="colorBall2(this)" class="color b-clr1">Color 1</button>
-          <button onclick="colorBall2(this)" class="color b-clr2">Color 2</button>
-          <button onclick="colorBall2(this)" class="color b-clr3">Color 3</button>
+          <h4 class="margintop">Color 2</h4>
+          <button onclick="colorBall2(this)" class="color b-clr1"></button>
+          <button onclick="colorBall2(this)" class="color b-clr2"></button>
+          <button onclick="colorBall2(this)" class="color b-clr3"></button>
         </div>
       </div>
 
       <div id="lightcolors">
+        <h3 class="margintop">Lights</h3>
         <div>
-          <h3>Light color 1</h3>
-          <button onclick="colorLight1(this)" class="color l-clr1">Color 1</button>
-          <button onclick="colorLight1(this)" class="color l-clr2">Color 2</button>
-          <button onclick="colorLight1(this)" class="color l-clr3">Color 3</button>
+          <h4>Color 1</h4>
+          <button onclick="colorLight1(this)" class="color l-clr1"></button>
+          <button onclick="colorLight1(this)" class="color l-clr2"></button>
+          <button onclick="colorLight1(this)" class="color l-clr3"></button>
         </div>
         <div>
-          <h3>Light color 2</h3>
-          <button onclick="colorLight2(this)" class="color l-clr1">Color 1</button>
-          <button onclick="colorLight2(this)" class="color l-clr2">Color 2</button>
-          <button onclick="colorLight2(this)" class="color l-clr3">Color 3</button>
+          <h4 class="margintop">Color 2</h4>
+          <button onclick="colorLight2(this)" class="color l-clr1"></button>
+          <button onclick="colorLight2(this)" class="color l-clr2"></button>
+          <button onclick="colorLight2(this)" class="color l-clr3"></button>
         </div>
         <div>
-          <h3>Light color 3</h3>
-          <button onclick="colorLight3(this)" class="color l-clr1">Color 1</button>
-          <button onclick="colorLight3(this)" class="color l-clr2">Color 2</button>
-          <button onclick="colorLight3(this)" class="color l-clr3">Color 3</button>
+          <h4 class="margintop">Color 3</h4>
+          <button onclick="colorLight3(this)" class="color l-clr1"></button>
+          <button onclick="colorLight3(this)" class="color l-clr2"></button>
+          <button onclick="colorLight3(this)" class="color l-clr3"></button>
         </div>
       </div>
     </div>
@@ -105,7 +110,7 @@
   </main>
 
   <footer>
-    <h1>Current Weather</h1>
+    <h2>Current Weather</h1>
     <p id="weather-info">Loading...</p>
   </footer>
 </body>

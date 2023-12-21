@@ -71,9 +71,14 @@ function getWeather(position) {
             const weatherElement = document.getElementById('weather-animation');
 
             switch (weatherDescription) {
+            default:
+                document.getElementById('white-christmas').innerHTML = 'Sorry, no white Christmas for you..';
+                break;
             case 'snow':
                 weatherElement.classList.add('snowy');
-                weatherElement.classList.remove('hidden');} 
+                weatherElement.classList.remove('hidden');
+                document.getElementById('white-christmas').innerHTML = 'Yay, you will have a white Christmas!';
+            } 
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);

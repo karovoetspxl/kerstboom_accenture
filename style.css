@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Afacad', sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 /* HEADER */
 h1 {
-  margin: 5%;
+  margin: 3%;
   color: #fff;
   text-align: center;
   font-family: 'Kalnia', serif;
@@ -30,18 +30,27 @@ main {
 .card {
   background-color: #3e4e73;
   width: 50%;
-  height: 60vh;
+  height: 80vh;
   border-radius: 5px;
 }
 
 .card h1 {
-  margin-top: 15%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-family: 'Kalam', cursive;
+  font-size: 40px;
+}
+
+#white-christmas {
+  color: #c5d0eb;
+  text-align: center;
 }
 
 .christmas {
   position: relative;
   top: 30%;
   left: 50%;
+  width: 100px;
 }
 
 .tree {
@@ -402,24 +411,23 @@ main {
 /* CHANGE COLORS */
 .colors {
   background-color: #c5d0eb;
-  padding: 5%;
+  padding: 3%;
   border-radius: 7px;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Kalnia', serif;
   color: #fff;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 h3 {
   color: #3e4e73;
-  font-family: 'Afacad', sans-serif;
 }
 
 h4 {
   color: #fff;
-  font-family: 'Afacad', sans-serif;
 }
 
 .margintop {
@@ -427,7 +435,7 @@ h4 {
 }
 
 .ornaments2 {
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .color {
@@ -466,41 +474,6 @@ h4 {
 
 .l-clr3 {
   background-color: #08bdbd;
-}
-
-@media screen and (max-width: 1800px) {
-  .card {
-    width: 60%;
-  }
-  main {
-    padding: 0 5%;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  main {
-    padding: 0 20%;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  main {
-    width: 100%;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .colors {
-    width: 100%;
-    text-align: center;
-    margin: 15% 0;
-  }
-
-  h2, .ornaments2 {
-    margin-bottom: 10%;
-  }
 }
 
 /* SNOW */
@@ -576,6 +549,53 @@ h4 {
 }
 
 /* FOOTER */
+footer {
+  padding: 5%;
+}
 footer h2 {
   margin-bottom: 0;
+}
+
+/* MEDIAQUERRY */
+@media screen and (max-width: 1800px) {
+  .card {
+    width: 60%;
+  }
+  main {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    margin: 7% 0;
+  }
+  main {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .colors {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h2, .ornaments2 {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    margin-top: 5%;
+  }
 }

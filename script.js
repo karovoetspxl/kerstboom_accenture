@@ -2,65 +2,100 @@
 function colorBall1(z) {
     let a = getComputedStyle(z);
     let b = a.backgroundColor;
-    document.getElementsByClassName("ball1")[0].style.backgroundColor = b;
-    document.getElementsByClassName("ball1")[1].style.backgroundColor = b;
-    document.getElementsByClassName("ball1")[2].style.backgroundColor = b;
+    //document.getElementsByClassName("ball1")[0].style.backgroundColor = b;
+    //document.getElementsByClassName("ball1")[1].style.backgroundColor = b;
+    //document.getElementsByClassName("ball1")[2].style.backgroundColor = b;
     
-    let elements = document.getElementsByClassName("ball1");
+    let ball1Elements = document.getElementsByClassName("ball1");
+
+    for (let i = 0; i < ball1Elements.length; i++) {
+        ball1Elements[i].style.backgroundColor = b;
+        ball1Elements[i].innerText = "";
+    }
+
+    /*let elements = document.getElementsByClassName("ball1");
     Array.from(elements).forEach(function(element) {
-    element.style.border = "none";})
+    element.style.border = "none";})*/
 }
 
 function colorBall2(z) {
     let a = getComputedStyle(z);
     let b = a.backgroundColor;
-    document.getElementsByClassName("ball2")[0].style.backgroundColor = b;
-    document.getElementsByClassName("ball2")[1].style.backgroundColor = b;
-    document.getElementsByClassName("ball2")[2].style.backgroundColor = b;
+    //document.getElementsByClassName("ball2")[0].style.backgroundColor = b;
+    //document.getElementsByClassName("ball2")[1].style.backgroundColor = b;
+    //document.getElementsByClassName("ball2")[2].style.backgroundColor = b;
 
-    let elements = document.getElementsByClassName("ball2");
+    let ball2Elements = document.getElementsByClassName("ball2");
+
+    for (let i = 0; i < ball2Elements.length; i++) {
+        ball2Elements[i].style.backgroundColor = b;
+        ball2Elements[i].innerText = "";
+    }
+
+    /*let elements = document.getElementsByClassName("ball2");
     Array.from(elements).forEach(function(element) {
-    element.style.border = "none";})
+    element.style.border = "none";})*/
 }
 
 //LIGHTS
 function colorLight1(z) {
     let a = getComputedStyle(z);
     let b = a.backgroundColor;
-    document.getElementsByClassName("light1")[0].style.backgroundColor = b;
-    document.getElementsByClassName("light1")[1].style.backgroundColor = b;
-    document.getElementsByClassName("light1")[2].style.backgroundColor = b;
-    document.getElementsByClassName("light1")[3].style.backgroundColor = b;
+    //document.getElementsByClassName("light1")[0].style.backgroundColor = b;
+    //document.getElementsByClassName("light1")[1].style.backgroundColor = b;
+    //document.getElementsByClassName("light1")[2].style.backgroundColor = b;
+    //document.getElementsByClassName("light1")[3].style.backgroundColor = b;
 
-    let elements = document.getElementsByClassName("light1");
+    let light1Elements = document.getElementsByClassName("light1");
+
+    for (let i = 0; i < light1Elements.length; i++) {
+        light1Elements[i].style.backgroundColor = b;
+        light1Elements[i].innerText = "";
+    }
+
+    /*let elements = document.getElementsByClassName("light1");
     Array.from(elements).forEach(function(element) {
-    element.style.border = "none";})
+    element.style.border = "none";})*/
 }
 
 function colorLight2(z) {
     let a = getComputedStyle(z);
     let b = a.backgroundColor;
-    document.getElementsByClassName("light2")[0].style.backgroundColor = b;
-    document.getElementsByClassName("light2")[1].style.backgroundColor = b;
-    document.getElementsByClassName("light2")[2].style.backgroundColor = b;
-    document.getElementsByClassName("light2")[3].style.backgroundColor = b;
+    //document.getElementsByClassName("light2")[0].style.backgroundColor = b;
+    //document.getElementsByClassName("light2")[1].style.backgroundColor = b;
+    //document.getElementsByClassName("light2")[2].style.backgroundColor = b;
+    //document.getElementsByClassName("light2")[3].style.backgroundColor = b;
 
-    let elements = document.getElementsByClassName("light2");
+    let light2Elements = document.getElementsByClassName("light2");
+
+    for (let i = 0; i < light2Elements.length; i++) {
+        light2Elements[i].style.backgroundColor = b;
+        light2Elements[i].innerText = "";
+    }
+
+    /*let elements = document.getElementsByClassName("light2");
     Array.from(elements).forEach(function(element) {
-    element.style.border = "none";})
+    element.style.border = "none";})*/
 }
 
 function colorLight3(z) {
     let a = getComputedStyle(z);
     let b = a.backgroundColor;
-    document.getElementsByClassName("light3")[0].style.backgroundColor = b;
-    document.getElementsByClassName("light3")[1].style.backgroundColor = b;
-    document.getElementsByClassName("light3")[2].style.backgroundColor = b;
-    document.getElementsByClassName("light3")[3].style.backgroundColor = b;
+    //document.getElementsByClassName("light3")[0].style.backgroundColor = b;
+    //document.getElementsByClassName("light3")[1].style.backgroundColor = b;
+    //document.getElementsByClassName("light3")[2].style.backgroundColor = b;
+    //document.getElementsByClassName("light3")[3].style.backgroundColor = b;
 
-    let elements = document.getElementsByClassName("light3");
+    let light3Elements = document.getElementsByClassName("light3");
+
+    for (let i = 0; i < light3Elements.length; i++) {
+        light3Elements[i].style.backgroundColor = b;
+        light3Elements[i].innerText = "";
+    }
+
+    /*let elements = document.getElementsByClassName("light3");
     Array.from(elements).forEach(function(element) {
-    element.style.border = "none";})
+    element.style.border = "none";})*/
 }
 
 //WEATHER API

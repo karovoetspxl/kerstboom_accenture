@@ -5,6 +5,10 @@ function colorBall1(z) {
     document.getElementsByClassName("ball1")[0].style.backgroundColor = b;
     document.getElementsByClassName("ball1")[1].style.backgroundColor = b;
     document.getElementsByClassName("ball1")[2].style.backgroundColor = b;
+    
+    let elements = document.getElementsByClassName("ball1");
+    Array.from(elements).forEach(function(element) {
+    element.style.border = "none";})
 }
 
 function colorBall2(z) {
@@ -13,6 +17,10 @@ function colorBall2(z) {
     document.getElementsByClassName("ball2")[0].style.backgroundColor = b;
     document.getElementsByClassName("ball2")[1].style.backgroundColor = b;
     document.getElementsByClassName("ball2")[2].style.backgroundColor = b;
+
+    let elements = document.getElementsByClassName("ball2");
+    Array.from(elements).forEach(function(element) {
+    element.style.border = "none";})
 }
 
 //LIGHTS
@@ -23,6 +31,10 @@ function colorLight1(z) {
     document.getElementsByClassName("light1")[1].style.backgroundColor = b;
     document.getElementsByClassName("light1")[2].style.backgroundColor = b;
     document.getElementsByClassName("light1")[3].style.backgroundColor = b;
+
+    let elements = document.getElementsByClassName("light1");
+    Array.from(elements).forEach(function(element) {
+    element.style.border = "none";})
 }
 
 function colorLight2(z) {
@@ -32,6 +44,10 @@ function colorLight2(z) {
     document.getElementsByClassName("light2")[1].style.backgroundColor = b;
     document.getElementsByClassName("light2")[2].style.backgroundColor = b;
     document.getElementsByClassName("light2")[3].style.backgroundColor = b;
+
+    let elements = document.getElementsByClassName("light2");
+    Array.from(elements).forEach(function(element) {
+    element.style.border = "none";})
 }
 
 function colorLight3(z) {
@@ -41,6 +57,10 @@ function colorLight3(z) {
     document.getElementsByClassName("light3")[1].style.backgroundColor = b;
     document.getElementsByClassName("light3")[2].style.backgroundColor = b;
     document.getElementsByClassName("light3")[3].style.backgroundColor = b;
+
+    let elements = document.getElementsByClassName("light3");
+    Array.from(elements).forEach(function(element) {
+    element.style.border = "none";})
 }
 
 //WEATHER API
@@ -74,7 +94,7 @@ function getWeather(position) {
             default:
                 document.getElementById('white-christmas').innerHTML = 'Sorry, no white Christmas for you..';
                 break;
-            case 'snow':
+            case 'broken snow':
                 weatherElement.classList.add('snowy');
                 weatherElement.classList.remove('hidden');
                 document.getElementById('white-christmas').innerHTML = 'Yay, you will have a white Christmas!';

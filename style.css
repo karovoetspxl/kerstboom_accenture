@@ -450,6 +450,26 @@ h4 {
   opacity: 70%;
 }
 
+#b1, #b3, #b5 {
+  border: 1px solid black;
+}
+
+#b2, #b4, #b6 {
+  border: 1px solid purple;
+}
+
+#l1, #l4, #l7, #l10 {
+  border: 1px solid blue;
+}
+
+#l2, #l5, #l8, #l11 {
+  border: 1px solid green;
+}
+
+#l3, #l6, #l9, #l12 {
+  border: 1px solid pink;
+}
+
 /* BALLS */
 .b-clr1 {
   background-color: #ed6a5a;

@@ -1,3 +1,42 @@
+const buttonClass = "some-class";
+
+const colorMapping = {
+  red: "#ed6a5a",
+  beige: "#f4f1bb",
+  babyblue: "#DDF5F8",
+  pink: "#ef476f",
+  yellow: "#ffd166",
+  darkblue: "#00398F"
+};
+
+function colorize(targetColor, elementsToApplyStyle) {
+  elementsToApplyStyle.forEach((element) => {
+    element.style.backgroundColor = colorMapping[targetColor];
+    element.innerText = "";
+  });
+}
+
+function getTargetElements(targetClass) {
+  return document.querySelectorAll(`.${targetClass}`);
+}
+
+function handleButtonClick(e) {
+  e.preventDefault();
+  const currentButton = e.currentTarget;
+  const targetClass = currentButton.dataset.targetClass;
+  const elementsToApplyStyle = getTargetElements(targetClass);
+  const targetColor = currentButton.dataset.targetColor;
+  colorize(targetColor, elementsToApplyStyle);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll(`.${buttonClass}`);
+  buttons.forEach((button) => {
+    button.addEventListener('click', handleButtonClick);
+  });
+});
+
+/*
 //BALLS
 function colorBall1(z) {
     let a = getComputedStyle(z);
@@ -16,7 +55,7 @@ function colorBall1(z) {
     /*let elements = document.getElementsByClassName("ball1");
     Array.from(elements).forEach(function(element) {
     element.style.border = "none";})*/
-}
+/*}
 
 function colorBall2(z) {
     let a = getComputedStyle(z);
@@ -35,7 +74,7 @@ function colorBall2(z) {
     /*let elements = document.getElementsByClassName("ball2");
     Array.from(elements).forEach(function(element) {
     element.style.border = "none";})*/
-}
+/*}
 
 //LIGHTS
 function colorLight1(z) {
@@ -56,7 +95,7 @@ function colorLight1(z) {
     /*let elements = document.getElementsByClassName("light1");
     Array.from(elements).forEach(function(element) {
     element.style.border = "none";})*/
-}
+/*}
 
 function colorLight2(z) {
     let a = getComputedStyle(z);
@@ -76,7 +115,7 @@ function colorLight2(z) {
     /*let elements = document.getElementsByClassName("light2");
     Array.from(elements).forEach(function(element) {
     element.style.border = "none";})*/
-}
+/*}
 
 function colorLight3(z) {
     let a = getComputedStyle(z);
@@ -96,7 +135,7 @@ function colorLight3(z) {
     /*let elements = document.getElementsByClassName("light3");
     Array.from(elements).forEach(function(element) {
     element.style.border = "none";})*/
-}
+/*}*/
 
 //WEATHER API
 document.addEventListener('DOMContentLoaded', function () {

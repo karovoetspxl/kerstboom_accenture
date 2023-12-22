@@ -440,7 +440,47 @@ h4 {
   margin-bottom: 10%;
 }
 
-.color {
+.some-class {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: #3e4e73 solid 2px;
+}
+
+.some-class:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.bc1 {
+  background-color: #ed6a5a;
+}
+
+.bc2 {
+  background-color: #f4f1bb;
+}
+
+.bc3 {
+  background-color: #DDF5F8;
+}
+
+.lc1 {
+  background-color: #ef476f;
+}
+
+.lc2 {
+  background-color: #ffd166;
+}
+
+.lc3 {
+  background-color: #00398F;
+}
+
+/*.some-class {
+  border: red solid 5px;
+}*/
+
+/*.color {
   width: 60px;
   height: 30px;
   border-radius: 5px;
@@ -452,7 +492,6 @@ h4 {
   opacity: 70%;
 }
 
-/*
 #b1, #b3, #b5 {
   border: 2px solid blue;
 }
@@ -491,11 +530,10 @@ h4 {
 
 #c5 {
   color: yellow;
-}
-*/
+}*/
 
 /* BALLS */
-.b-clr1 {
+/*.b-clr1 {
   background-color: #ed6a5a;
 }
 
@@ -505,10 +543,10 @@ h4 {
 
 .b-clr3 {
   background-color: #DDF5F8;
-}
+}*/
 
 /* LIGHTS */
-.l-clr1 {
+/*.l-clr1 {
   background-color: #ef476f;
 }
 
@@ -519,6 +557,7 @@ h4 {
 .l-clr3 {
   background-color: #00398F;
 }
+*/
 
 /* SNOW */
 .snowy{

@@ -121,7 +121,7 @@ function getWeather(position) {
 
 
             const weatherInfo = `Weather: ${weatherDescription}`;
-            document.getElementById('weather-info').innerHTML = weatherInfo;
+            //document.getElementById('weather-info').innerHTML = weatherInfo;
 
             const weatherElement = document.getElementById('weather-animation');
 

@@ -7,13 +7,13 @@
 }
 
 body {
-  background-color: #9eadcf;
+  background-color: #8393C3;
 }
 
 /* HEADER */
 h1 {
   margin: 3%;
-  color: #fff;
+  color: #222D3F;
   text-align: center;
   font-family: 'Kalnia', serif;
 }
@@ -28,7 +28,7 @@ main {
 }
 
 .card {
-  background-color: #3e4e73;
+  background-color: #323F58;
   width: 50%;
   height: 80vh;
   border-radius: 5px;
@@ -39,10 +39,11 @@ main {
   margin-bottom: 1%;
   font-family: 'Kalam', cursive;
   font-size: 40px;
+  color: #fff;
 }
 
 #white-christmas {
-  color: #c5d0eb;
+  color: #EAEDF6;
   text-align: center;
 }
 
@@ -69,7 +70,7 @@ main {
   height: 0;
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
-  border-bottom: 330px solid #358f80;
+  border-bottom: 330px solid #389989;
   border-radius: 30px;
   top: -320px;
   left: -135px;
@@ -83,7 +84,7 @@ main {
   border-right: 150px solid transparent;
   border-bottom: 330px solid #56ab91;
   border-bottom-right-radius: 30px;
-  top: -339px;
+  top: -342px;
   right: -15px;
 }
 
@@ -91,7 +92,7 @@ main {
 .cord1 {
   width: 120px;
   height: 120px;
-  border: solid 3px #333;
+  border: solid 3px #D4D4D4;
   border-radius: 50%;
   top: -255px;
   left: -50px;
@@ -105,7 +106,7 @@ main {
 .cord2 {
   width: 240px;
   height: 200px;
-  border: solid 3px #333;
+  border: solid 3px #D4D4D4;
   border-radius: 50%;
   top: -180px;
   left: -120px;
@@ -411,7 +412,7 @@ main {
 
 /* CHANGE COLORS */
 .colors {
-  background-color: #c5d0eb;
+  background-color: #fff;
   padding: 3%;
   border-radius: 7px;
   text-align: center;
@@ -419,16 +420,16 @@ main {
 
 h2 {
   font-family: 'Kalnia', serif;
-  color: #fff;
+  color: #222D3F;
   margin-bottom: 10%;
 }
 
 h3 {
-  color: #3e4e73;
+  color: #323F58;
 }
 
 h4 {
-  color: #fff;
+  color: #222D3F;
 }
 
 .margintop {
@@ -503,7 +504,7 @@ h4 {
 }
 
 .b-clr3 {
-  background-color: #9bc1bc;
+  background-color: #DDF5F8;
 }
 
 /* LIGHTS */
@@ -516,7 +517,7 @@ h4 {
 }
 
 .l-clr3 {
-  background-color: #08bdbd;
+  background-color: #00398F;
 }
 
 /* SNOW */
@@ -592,12 +593,12 @@ h4 {
 }
 
 /* FOOTER */
-footer {
+/*footer {
   padding: 5%;
 }
 footer h2 {
   margin-bottom: 0;
-}
+}*/
 
 /* MEDIAQUERRY */
 @media screen and (max-width: 1800px) {
@@ -615,7 +616,10 @@ footer h2 {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+  main {
+    margin-bottom: 7%;
+  }
   header {
     margin: 7% 0;
   }
@@ -638,7 +642,7 @@ footer h2 {
     margin-bottom: 5%;
   }
   
-  footer {
+  /*footer {
     margin-top: 5%;
-  }
+  }*/
 }

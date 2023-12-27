@@ -6,7 +6,8 @@ const colorMapping = {
   babyblue: "#DDF5F8",
   pink: "#ef476f",
   yellow: "#ffd166",
-  darkblue: "#00398F"
+  darkblue: "#00398F",
+  white: "#ffffff"
 };
 
 function colorize(targetColor, elementsToApplyStyle) {
@@ -35,6 +36,25 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', handleButtonClick);
   });
 });
+
+const buttonReset = "reset";
+
+function reset(targetColor, elementsToApplyStyle) {
+    elementsToApplyStyle.forEach((element) => {
+      element.style.backgroundColor = colorMapping[targetColor];
+      element.innerText = "";
+    });
+  }
+
+  function handleButtonClick(e) {
+    e.preventDefault();
+    const currentButton = e.currentTarget;
+    const targetClass = currentButton.dataset.targetClass;
+    const elementsToApplyStyle = getTargetElements(targetClass);
+    const targetColor = currentButton.dataset.targetColor;
+    reset(targetColor, elementsToApplyStyle);
+  }
+
 
 /*
 //BALLS

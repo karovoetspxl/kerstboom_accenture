@@ -476,6 +476,16 @@ h4 {
   background-color: #00398F;
 }
 
+.reset {
+  background-color: #fff;
+  margin-top: 5%;
+}
+
+.reset:hover {
+  background-color: #3e4e73;
+  color: #fff;
+}
+
 /*.some-class {
   border: red solid 5px;
 }*/

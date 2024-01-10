@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', handleButtonClick);
   });
 });
-
+/*
 const buttonReset = "reset";
 
 function reset(targetColor, elementsToApplyStyle) {
@@ -55,7 +55,7 @@ function reset(targetColor, elementsToApplyStyle) {
     reset(targetColor, elementsToApplyStyle);
   }
 
-
+*/
 /*
 //BALLS
 function colorBall1(z) {
@@ -188,7 +188,7 @@ function getWeather(position) {
             default:
                 document.getElementById('white-christmas').innerHTML = 'Sorry, no white Christmas for you..';
                 break;
-            case 'broken snow':
+            case 'snow':
                 weatherElement.classList.add('snowy');
                 weatherElement.classList.remove('hidden');
                 document.getElementById('white-christmas').innerHTML = 'Yay, you will have a white Christmas!';
